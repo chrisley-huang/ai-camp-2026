@@ -14,32 +14,21 @@
         .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
     <script>
-        // 1. 禁用瀏覽器自動記憶捲動位置 (Scroll Restoration)
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-
-        // 2. 確保網頁載入時立即強制回到最頂端 (0, 0)
+        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
         window.scrollTo(0, 0);
-
-        // 3. 針對部分瀏覽器延遲加載的情況，增加監聽器再次確認回到頂部
-        window.onload = function() {
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-            }, 1);
-        };
+        window.onload = function() { setTimeout(function() { window.scrollTo(0, 0); }, 1); };
     </script>
 </head>
 <body class="text-gray-800">
 
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="font-black text-blue-900 text-sm md:text-xl tracking-tighter leading-tight flex items-center gap-4">
-                <span class="hidden sm:inline text-blue-900">張榮發慈善基金會- <span class="text-blue-500">2026公益計畫</span></span>
+        <div class="max-w-6xl mx-auto px-4 h-16 flex flex-col justify-center sm:flex-row sm:items-center sm:justify-between">
+            <div class="font-black text-blue-900 text-[11px] md:text-xl tracking-tighter leading-tight text-center sm:text-left mb-1 sm:mb-0">
+                <span>張榮發慈善基金會- <span class="text-blue-500">2026公益計畫</span></span>
             </div>
-            <div class="flex items-center gap-2 md:gap-4">
-                <a href="#courses" class="text-[10px] md:text-sm text-blue-600 font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full transition">快速跳至課程表 ↓</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSebyL8N9142k1WfKusD76IyC64i2pwmpyQHz5POdcvATHlp_w/viewform" target="_blank" class="bg-blue-600 text-white px-4 md:px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-md font-medium text-[10px] md:text-sm relative z-20">立即報名</a>
+            <div class="flex items-center justify-center gap-2 md:gap-4">
+                <a href="#courses" class="text-[9px] md:text-sm text-blue-600 font-bold hover:underline bg-blue-50 px-2 md:px-3 py-1.5 rounded-full transition">快速跳至課程表 ↓</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSebyL8N9142k1WfKusD76IyC64i2pwmpyQHz5POdcvATHlp_w/viewform" target="_blank" class="bg-blue-600 text-white px-3 md:px-5 py-1.5 rounded-full hover:bg-blue-700 transition shadow-md font-medium text-[9px] md:text-sm relative z-20">立即報名</a>
             </div>
         </div>
     </nav>
@@ -51,7 +40,7 @@
                 <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight">
                     小資也能做的<br><span class="text-yellow-400">AI 行銷實戰術</span>
                 </h1>
-                <p class="text-lg md:text-2xl mb-10 opacity-90 max-w-2xl font-light">
+                <p class="text-lg md:text-2xl mb-10 opacity-90 max-w-2xl font-light text-center md:text-left">
                     不用花大錢找行銷公司，每個月只要 1.5 小時，教你運用 AI 工具提升粉絲量與曝光度！
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -92,46 +81,6 @@
         </div>
     </section>
 
-    <section class="py-20 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2 text-center md:text-left">
-                <h2 class="text-4xl font-bold text-blue-900 mb-8 leading-tight">為什麼你<br>一定要參加？</h2>
-                <div class="space-y-6">
-                    <div class="flex items-start text-left">
-                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mr-4">🕒</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-1">全程線上 ‧ 零成本</h4>
-                            <p class="text-gray-600 text-sm">只要有網路，全世界各地都可參加，省去交通奔波。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start text-left">
-                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mr-4">⚡</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-1">導入 AI 實戰工具</h4>
-                            <p class="text-gray-600 text-sm">降低剪輯與文案產出時間，一個人也能展現團隊級戰力。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start text-left">
-                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mr-4">🤝</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-1">專屬一對一輔導</h4>
-                            <p class="text-gray-600 text-sm">完成任務的團體，下半年有機會獲得實地輔導與器材補助。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="md:w-1/2 bg-blue-50 p-10 rounded-[3rem] border border-blue-100">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6">🎯 課程實戰亮點</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-center text-gray-700 bg-white p-4 rounded-2xl shadow-sm"><span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 font-bold">1</span>LINE 官方帳號與價值經營</li>
-                    <li class="flex items-center text-gray-700 bg-white p-4 rounded-2xl shadow-sm"><span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 font-bold">2</span>Reels 短影音與募款文案產出</li>
-                    <li class="flex items-center text-gray-700 bg-white p-4 rounded-2xl shadow-sm"><span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 font-bold">3</span>AI 生成社群內容工具實作</li>
-                    <li class="flex items-center text-gray-700 bg-white p-4 rounded-2xl shadow-sm"><span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3 font-bold">4</span>職人口播與腳本拍片教學</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <section id="courses" class="py-20 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
@@ -143,8 +92,8 @@
                     <div class="flex items-center space-x-6 mb-4 md:mb-0">
                         <div class="text-blue-600 font-black text-2xl w-12 text-center">01</div>
                         <div>
-                            <h4 class="font-bold text-lg group-hover:text-blue-600 transition">LINE@ 官方帳號經營心法</h4>
-                            <p class="text-gray-500 font-medium text-sm">3/17 (二) 14:30~16:00</p>
+                            <h4 class="font-bold text-lg group-hover:text-blue-600 transition text-left">LINE@ 官方帳號經營心法</h4>
+                            <p class="text-gray-500 font-medium text-sm text-left">3/17 (二) 14:30~16:00</p>
                         </div>
                     </div>
                     <a href="https://www.youtube.com/live/l7n808WSVcg" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-red-700 transition flex items-center gap-2">觀看直播 🎬</a>
@@ -153,49 +102,49 @@
                     <div class="flex items-center space-x-6 mb-4 md:mb-0">
                         <div class="text-blue-600 font-black text-2xl w-12 text-center">02</div>
                         <div>
-                            <h4 class="font-bold text-lg group-hover:text-blue-600 transition">LINE 名片實戰：讓聯絡變成價值</h4>
-                            <p class="text-gray-500 font-medium text-sm">4/21 (二) 14:30~16:00</p>
+                            <h4 class="font-bold text-lg group-hover:text-blue-600 transition text-left">LINE 名片實戰：讓聯絡變成價值</h4>
+                            <p class="text-gray-500 font-medium text-sm text-left">4/21 (二) 14:30~16:00</p>
                         </div>
                     </div>
-                    <a href="https://youtube.com/live/8Fj8tAcn8jE" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-red-700 transition flex items-center gap-2 text-center">觀看直播 🎬</a>
+                    <a href="https://youtube.com/live/8Fj8tAcn8jE" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-red-700 transition flex items-center gap-2">觀看直播 🎬</a>
                 </div>
-                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80 text-center md:text-left">
+                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80">
                     <div class="flex items-center space-x-6 mb-4 md:mb-0">
                         <div class="text-gray-400 font-black text-2xl w-12 text-center">03</div>
                         <div>
-                            <h4 class="font-bold text-lg text-gray-700">社福團體短影片實戰入門</h4>
-                            <p class="text-gray-400 font-medium text-sm">5/12 (二) 14:30~16:00</p>
+                            <h4 class="font-bold text-lg text-gray-700 text-left">社福團體短影片實戰入門</h4>
+                            <p class="text-gray-400 font-medium text-sm text-left">5/12 (二) 14:30~16:00</p>
                         </div>
                     </div>
                     <span class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold">連結尚未開放</span>
                 </div>
-                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80 text-center md:text-left">
+                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80">
                     <div class="flex items-center space-x-6 mb-4 md:mb-0">
                         <div class="text-gray-400 font-black text-2xl w-12 text-center">04</div>
                         <div>
-                            <h4 class="font-bold text-lg text-gray-700">職人口播－從腳本構思到現場實拍</h4>
-                            <p class="text-gray-400 font-medium text-sm">6/02 (二) 14:30~16:00</p>
+                            <h4 class="font-bold text-lg text-gray-700 text-left">職人口播－從腳本構思到現場實拍</h4>
+                            <p class="text-gray-400 font-medium text-sm text-left">6/02 (二) 14:30~16:00</p>
                         </div>
                     </div>
                     <span class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold">連結尚未開放</span>
                 </div>
-                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80 text-center md:text-left">
+                <div class="bg-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-sm border border-gray-100 opacity-80">
                     <div class="flex items-center space-x-6 mb-4 md:mb-0">
                         <div class="text-gray-400 font-black text-2xl w-12 text-center">05</div>
                         <div>
-                            <h4 class="font-bold text-lg text-gray-700">AI × 社群內容：從素材到高效曝光</h4>
-                            <p class="text-gray-400 font-medium text-sm">6/16 (二) 14:30~16:00</p>
+                            <h4 class="font-bold text-lg text-gray-700 text-left">AI × 社群內容：從素材到高效曝光</h4>
+                            <p class="text-gray-400 font-medium text-sm text-left">6/16 (二) 14:30~16:00</p>
                         </div>
                     </div>
                     <span class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold">連結尚未開放</span>
                 </div>
                 <div class="bg-blue-900 p-8 rounded-3xl text-white shadow-xl mt-6 relative overflow-hidden group text-left">
                     <div class="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition duration-500"><svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-                    <div class="relative z-10">
+                    <div class="relative z-10 text-left">
                         <span class="inline-block bg-yellow-400 text-blue-900 px-4 py-1 rounded-full text-xs font-black mb-4">✨ 專屬福利</span>
                         <h4 class="text-2xl font-black mb-2 text-yellow-400">下半年 限定 2 名</h4>
-                        <p class="text-lg font-bold border-b border-white/20 pb-4 mb-4">專家實地陪伴教學</p>
-                        <ul class="space-y-3 text-sm font-medium">
+                        <p class="text-lg font-bold border-b border-white/20 pb-4 mb-4 text-left">專家實地陪伴教學</p>
+                        <ul class="space-y-3 text-sm font-medium text-left">
                             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span> 1. 資深診斷：線上需求分析</li>
                             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span> 2. 實地實作：教練實拍與教學</li>
                         </ul>
@@ -221,8 +170,8 @@
             <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
                 <div>
                     <h4 class="font-black text-xl text-green-600 mb-2 tracking-tighter underline decoration-yellow-400">財團法人張榮發慈善基金會</h4>
-                    <p class="text-gray-500 text-sm font-bold uppercase tracking-wider mb-1">聯繫窗口：陳亮宏</p>
-                    <p class="text-gray-500 text-sm font-medium">E-MAIL：cpd@cyff-charity.org.tw</p>
+                    <p class="text-gray-500 text-sm font-bold uppercase tracking-wider mb-1 text-center md:text-left">聯繫窗口：陳亮宏</p>
+                    <p class="text-gray-500 text-sm text-center md:text-left font-medium">E-MAIL：cpd@cyff-charity.org.tw</p>
                     <p class="text-gray-300 text-[10px] mt-8 uppercase font-bold tracking-[0.3em]">© 2026 CYFF × 8 CLAWS CREATIVE ENTERTAINMENT</p>
                 </div>
                 <div class="flex flex-col items-center md:items-end gap-6">
