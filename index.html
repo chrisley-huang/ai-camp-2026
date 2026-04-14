@@ -3,116 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 新媒體實戰營 | 張榮發慈善基金會</title>
+    <title>2026 公益團體多元培力計畫 - 新媒體實戰營</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; background-color: #f8fafc; }
         .bg-navy { background-color: #17265C; }
         .text-yellow { color: #F8D02C; }
-        .border-navy { border-color: #17265C; }
+        .section-title { border-left: 6px solid #F8D02C; padding-left: 1rem; margin-bottom: 2rem; }
     </style>
 </head>
 <body class="antialiased text-slate-800">
 
-    <nav class="bg-[#17265C]/95 fixed top-0 w-full z-50 shadow-lg border-b border-white/10 backdrop-blur-md">
+    <nav class="bg-[#17265C] fixed top-0 w-full z-50 shadow-xl border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center text-white">
-            <div>
-                <p class="text-[10px] font-bold opacity-60 leading-none">張榮發慈善基金會</p>
-                <h1 class="font-black text-lg text-[#F8D02C]">新媒體實戰營</h1>
+            <div class="leading-tight">
+                <p class="text-[10px] font-bold opacity-60">張榮發慈善基金會</p>
+                <h1 class="font-black text-sm md:text-lg text-[#F8D02C]">2026 新媒體實戰營</h1>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSebyL8N9142k1WfKusD76lyC64i2pwmpyQHz5POdcvATHlp_w/viewform" target="_blank" class="bg-[#F8D02C] text-[#17265C] px-5 py-2 rounded-full text-xs font-black hover:scale-105 transition shadow-lg">立即報名</a>
+            <div class="hidden md:flex gap-6 text-sm font-bold">
+                <a href="#about" class="hover:text-[#F8D02C]">計畫說明</a>
+                <a href="#courses" class="hover:text-[#F8D02C]">系列課程</a>
+                <a href="#contact" class="hover:text-[#F8D02C]">聯繫我們</a>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSebyL8N9142k1WfKusD76lyC64i2pwmpyQHz5POdcvATHlp_w/viewform" target="_blank" class="bg-[#F8D02C] text-[#17265C] px-5 py-2 rounded-full text-xs font-black hover:scale-105 transition">立即報名</a>
         </div>
     </nav>
 
-    <header class="bg-navy pt-36 pb-20 text-white text-center px-6">
+    <header class="bg-navy pt-32 pb-24 text-white text-center px-6">
         <div class="max-w-4xl mx-auto">
-            <p class="text-sm font-bold tracking-[0.3em] opacity-80 mb-4 uppercase">Chang Yung-Fa Charity Foundation</p>
-            <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight">新媒體實戰營</h2>
-            <p class="text-xl md:text-2xl font-bold text-yellow mb-12 tracking-widest">小資也能做的 AI 行銷術</p>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://www.cyff-charity.org.tw/zh-tw/news.php?act=view&id=66" target="_blank" class="bg-white text-navy px-8 py-4 rounded-2xl font-black shadow-xl hover:bg-slate-100 transition flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    查看課程官網
-                </a>
-                <a href="unnamed.jpg" download class="border-2 border-yellow text-yellow px-8 py-4 rounded-2xl font-black hover:bg-yellow hover:text-navy transition flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    下載課程海報
-                </a>
-            </div>
+            <h2 class="text-4xl md:text-6xl font-black mb-6">新媒體實戰營</h2>
+            <p class="text-xl md:text-3xl font-bold text-yellow mb-8 tracking-widest leading-relaxed">
+                小資也能做的 <br class="md:hidden"> AI 行銷術
+            </p>
+            <p class="text-slate-300 max-w-2xl mx-auto leading-loose opacity-80 mb-12">
+                賦能公益組織，打破資源侷限。我們透過 AI 數位工具與新媒體經營心法，<br class="hidden md:block"> 協助您用最小的成本，創造最大的社會影響力。
+            </p>
+            <a href="#courses" class="bg-white text-navy px-10 py-4 rounded-xl font-black shadow-2xl hover:bg-slate-100 transition">探索實戰課程</a>
         </div>
     </header>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <div class="mb-16 text-center">
-            <h3 class="text-3xl font-black text-navy mb-4 underline decoration-yellow decoration-8 underline-offset-8">2026 年度課程安排</h3>
-            <p class="text-slate-500 font-medium">點擊下方課程卡片可直接跳轉至直播連結</p>
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="section-title">
+            <h3 class="text-3xl font-black text-navy">計畫起源與目的</h3>
         </div>
+        <div class="grid md:grid-cols-2 gap-12 leading-relaxed text-slate-600">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-black text-navy mb-4 text-xl flex items-center gap-2">
+                    <span class="w-2 h-2 bg-yellow rounded-full"></span> 培力對象
+                </h4>
+                <p>針對非營利組織、公益團體及相關從業人員，希望能協助在有限預算下，運用數位行銷工具進行轉型。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-black text-navy mb-4 text-xl flex items-center gap-2">
+                    <span class="w-2 h-2 bg-yellow rounded-full"></span> 預期效益
+                </h4>
+                <p>學員將掌握 AI 文案生成、短影音製作、LINE@ 經營等實戰技能，提升募資效率與社會關注度。</p>
+            </div>
+        </div>
+    </section>
 
-        <div class="grid gap-6">
-            <a href="https://www.youtube.com/live/l7n808WSVcg" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xl hover:border-navy transition group">
-                <div>
-                    <span class="text-blue-600 font-bold text-sm bg-blue-50 px-3 py-1 rounded-full uppercase tracking-widest">March 17 (Tue)</span>
-                    <h4 class="text-xl font-black mt-3 group-hover:text-blue-700">1. LINE@ 官方帳號的經營心法</h4>
-                </div>
-                <div class="flex items-center gap-2 text-red-600 font-black">
-                    <span class="text-sm">前往直播</span>
-                    <svg class="w-6 h-6 animate-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                </div>
-            </a>
+    <section id="courses" class="py-20 bg-slate-100 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="section-title">
+                <h3 class="text-3xl font-black text-navy">2026 年度實戰系列課程</h3>
+                <p class="mt-2 text-slate-500">點擊卡片可直接前往該堂課程直播</p>
+            </div>
+            
+            <div class="grid gap-6">
+                <a href="https://www.youtube.com/live/l7n808WSVcg" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-xl hover:border-navy transition group flex flex-col md:flex-row justify-between items-center">
+                    <div>
+                        <span class="text-blue-600 font-bold text-xs bg-blue-50 px-3 py-1 rounded-full uppercase">3/17 (二) 14:30~16:00</span>
+                        <h4 class="text-xl font-black mt-3">LINE@ 官方帳號經營心法</h4>
+                        <p class="text-slate-400 text-sm mt-1">從 0 到 1 打造高黏著度的粉絲互動系統</p>
+                    </div>
+                    <p class="text-red-600 font-bold text-sm mt-4 md:mt-0 flex items-center gap-2">前往直播連結 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></p>
+                </a>
 
-            <a href="https://www.youtube.com/live/8Fj8tAcn8jE" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xl hover:border-navy transition group">
-                <div>
-                    <span class="text-blue-600 font-bold text-sm bg-blue-50 px-3 py-1 rounded-full uppercase tracking-widest">April 21 (Tue)</span>
-                    <h4 class="text-xl font-black mt-3 group-hover:text-blue-700">2. LINE 名片實戰：讓聯絡變成價值</h4>
-                </div>
-                <div class="flex items-center gap-2 text-red-600 font-black">
-                    <span class="text-sm">前往直播</span>
-                    <svg class="w-6 h-6 animate-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                </div>
-            </a>
+                <a href="https://www.youtube.com/live/8Fj8tAcn8jE" target="_blank" class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-xl hover:border-navy transition group flex flex-col md:flex-row justify-between items-center">
+                    <div>
+                        <span class="text-blue-600 font-bold text-xs bg-blue-50 px-3 py-1 rounded-full uppercase">4/21 (二) 14:30~16:00</span>
+                        <h4 class="text-xl font-black mt-3">LINE 名片實戰：讓聯絡變成價值</h4>
+                        <p class="text-slate-400 text-sm mt-1">數位名片應用，讓每一次社交都成為宣傳機會</p>
+                    </div>
+                    <p class="text-red-600 font-bold text-sm mt-4 md:mt-0 flex items-center gap-2">前往直播連結 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></p>
+                </a>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-3xl border border-slate-100 opacity-70">
-                    <span class="text-slate-400 font-bold text-xs">5/12 (二)</span>
-                    <h4 class="font-bold mt-2 text-slate-500">3. 短影片實戰入門</h4>
-                    <p class="text-[10px] text-slate-400 mt-2 italic">直播尚未開放</p>
-                </div>
-                <div class="bg-white p-6 rounded-3xl border border-slate-100 opacity-70">
-                    <span class="text-slate-400 font-bold text-xs">6/02 (二)</span>
-                    <h4 class="font-bold mt-2 text-slate-500">4. 職人口播實拍</h4>
-                    <p class="text-[10px] text-slate-400 mt-2 italic">直播尚未開放</p>
-                </div>
-                <div class="bg-navy p-6 rounded-3xl shadow-xl text-white">
-                    <span class="text-yellow font-black text-xs">6/16 (二)</span>
-                    <h4 class="font-black mt-2">5. AI × 社群內容</h4>
-                    <p class="text-[10px] text-yellow/70 mt-2 font-bold uppercase tracking-tighter">下半年專家陪伴限定</p>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 opacity-70">
+                        <span class="text-slate-400 font-bold text-xs uppercase italic">5/12 (二)</span>
+                        <h4 class="font-bold mt-2 text-slate-500">短影片實戰入門</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 opacity-70">
+                        <span class="text-slate-400 font-bold text-xs uppercase italic">6/02 (二)</span>
+                        <h4 class="font-bold mt-2 text-slate-500">職人口播實拍</h4>
+                    </div>
+                    <div class="bg-navy p-6 rounded-3xl shadow-xl text-white">
+                        <span class="text-yellow font-black text-xs uppercase">6/16 (二)</span>
+                        <h4 class="font-black mt-2">AI × 社群內容</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-slate-100 text-center">
-        <div class="max-w-2xl mx-auto">
-            <h3 class="text-2xl font-black text-navy mb-8">課程海報預覽</h3>
-            <img src="unnamed.jpg" alt="課程海報" class="w-full rounded-2xl shadow-2xl mb-10 border-4 border-white">
-            <a href="unnamed.jpg" download class="inline-flex items-center gap-3 bg-navy text-white px-10 py-4 rounded-xl font-black hover:scale-105 transition shadow-lg">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                下載完整海報 (JPG)
-            </a>
+    <section class="py-20 px-6 text-center">
+        <h3 class="text-2xl font-black text-navy mb-10">課程完整資訊下載</h3>
+        <div class="relative inline-block group">
+            <img src="unnamed.jpg" alt="海報" class="max-w-xs mx-auto rounded-3xl shadow-2xl mb-8 border-4 border-white transition group-hover:scale-[1.02]">
+            <div class="mt-4">
+                <a href="unnamed.jpg" download class="bg-navy text-white px-10 py-4 rounded-xl font-black hover:bg-slate-800 transition shadow-lg">下載完整海報 JPG</a>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-navy text-white py-16 px-6">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
-            <div>
-                <p class="text-yellow font-black tracking-widest text-lg mb-2">財團法人張榮發慈善基金會</p>
-                <p class="text-xs opacity-50 font-bold tracking-[0.2em] uppercase leading-relaxed">Chang Yung-Fa Charity Foundation<br>© 2026 All Rights Reserved.</p>
+    <footer id="contact" class="bg-navy text-white py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h4 class="text-yellow font-black tracking-widest text-2xl mb-6 uppercase leading-tight">財團法人張榮發慈善基金會</h4>
+            <p class="text-slate-400 mb-12 max-w-lg mx-auto leading-relaxed">致力於協助非營利組織運用數位科技轉型，提升永續經營的競爭力與影響力。</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <p class="text-yellow font-bold text-sm mb-1 uppercase tracking-widest">聯繫窗口</p>
+                    <p class="text-lg">陳亮宏 先生</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <p class="text-yellow font-bold text-sm mb-1 uppercase tracking-widest">電子郵件</p>
+                    <p class="text-lg">cpd@cyff-charity.org.tw</p>
+                </div>
             </div>
-            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <p class="text-sm font-bold text-yellow mb-1">聯繫窗口：陳亮宏 先生</p>
-                <p class="text-xs opacity-80">cpd@cyff-charity.org.tw</p>
+            
+            <div class="mt-20 pt-8 border-t border-white/10 text-[10px] opacity-30 tracking-[0.4em]">
+                © 2026 CYFF-CHARITY × 8 CLAWS CREATIVE ENTERTAINMENT
             </div>
         </div>
     </footer>
